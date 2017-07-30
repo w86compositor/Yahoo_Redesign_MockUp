@@ -1,0 +1,548 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #333;
+}
+
+
+
+/* Settings the navigational bar */
+
+.navbar-container {
+
+    width: 100%; /* Set a specific width */
+    background-color: #712881; /* Dark-grey background */
+    display: inline-grid;
+    grid-template-columns: 25% 50% 25%;
+}
+
+.form-search-bar {
+	display: inline-flex;
+	position: relative;
+	left: -30px;
+}
+.yahoo-img-container {
+	display: flex;
+	margin-left: 180px;
+}
+
+.yahoo-logo {
+	transition: all 100ms ease-in;
+	transform: scale(1.0);
+	cursor: pointer;
+}
+
+.yahoo-logo:hover {
+	transition: all 100ms ease-in;
+    transform: scale(1.2);
+}
+
+
+.yahoo-img-container img {
+	position: relative;
+	left: -30px;
+	margin: auto;
+	height: 15px;
+}
+
+.yahoo-img-container span {
+	color: #fff;
+	font-size: 1em;
+	margin: auto;
+	position: relative;
+	left: -30px;
+}
+
+
+input[type=text] {
+	margin: 10px;
+    padding: 3px;
+    width: 15em;
+    box-sizing: border-box;
+}
+
+.img-flex {
+	display: flex;
+}
+	
+.man-pic {
+	margin: auto;  /*This is very important to perfectly center an element inside the div with a display of flex insinde the container div*/
+    border-radius: 50%;
+    height: 28px;
+    box-sizing: content-box;
+}
+
+/*Here is where I define the dropdown menu*/
+
+.dropdown {
+
+	align-self: center;
+    margin-left: 150px;
+	position: relative;
+	list-style-type: none;
+    display: inline-block;
+}
+
+  .dropdown i {
+  	position: relative;
+	color: #fff;
+	opacity: 0.5;
+	font-size: 1em;
+	cursor: pointer;
+}
+
+
+.dropdown-content {
+
+	background-color: #712881;
+    color: #fff;
+    padding: 2rem;
+    display: none;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    z-index: 1;
+  }
+
+  .dropdown-content li {
+  	padding: 10px;
+  }
+
+
+.dropdown-content a:hover {
+
+	background-color: blue;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+.dropdown-content a:hover {
+	background-color: #a3a3a3;
+}
+
+.dropdown-ul:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-ul:hover .dropicon {
+    background-color: #712881;
+}
+
+ 
+/*Section 2 beginning with Jesse background Pic*/
+
+.jesse {
+
+	background-image: url(files/jesse-hd.jpg);
+    margin: 0;
+	background-position: center;
+    position: absolute;
+    top: -610px;
+    background-repeat: no-repeat;
+    height: 2000px;
+    width: 100%;
+    z-index: -10;
+    
+}
+
+/*Here I define the color of all the icons of the left bar */
+.icons-div {
+
+    display: grid;
+    grid-template-columns: 12.50% 12.50% 12.50% 12.50% 10% 30%;
+    grid-template-rows: 50% 50%;
+}
+
+.icon-container {
+
+    margin-top: -0.5px;
+    margin-bottom: 0;
+	display: inline-table;
+    list-style-type: none;
+    background-color: #fff;
+    padding: 0;
+    grid-column-start: 2;
+    position: relative;
+    left: -100px;
+}
+
+.icon-container li {
+	text-align: center;
+	padding: 10px;
+	margin: 0 auto;
+	transition: all 100ms ease-in;
+    transform: scale(1); 
+	
+}
+
+.icon-container li:hover {
+	 transition: all 100ms ease-in;
+    transform: scale(1.5);
+}
+
+.icon-container li a {
+	text-decoration: none;
+	
+}
+
+
+.mail-icon img {
+	color: #712881;
+	height: 24px;
+	width: 24px;
+	cursor: pointer;
+	padding-top: 5px;
+}
+.news-icon a {
+	color: #018BB6;
+}
+
+.finances-icon a {
+	color: #00BFFA;
+}
+
+.sports-icon a {
+	color: #FF7828;
+}
+
+.tv-icon img {
+	height: 24px;
+	width: 24px;
+	color: #566FF6;
+	cursor: pointer;
+}
+
+.star-icon a {
+	color: #FF0080;
+}
+
+.info-icon a {
+	color: #FF0D14;
+}
+
+
+.car-icon a {
+	color: #3031D7;
+}
+
+.shopping-icon a {
+	color: #FF6122;
+}
+
+.plane-icon a {
+	color: #0EB4E9;
+}
+
+.heart-icon a {
+	color: #F51414;
+}
+
+.suitcase-icon a {
+	color: #0D7EEA;
+	padding-bottom: 5px;
+}
+
+
+/*See me container*/
+
+.see-me-container {
+
+	grid-column-start: 6;
+	color: #333;
+    position: relative;
+    text-align: left;
+    padding-top: 4em;
+}
+
+.see-me-container a {
+
+	text-decoration: none;
+	font-style: italic;
+	color: #333;
+}
+
+.read-more:hover {
+
+    color: #f7ed47;
+}
+
+.see-me-container p:first-of-type {
+	
+	margin-bottom: 0;
+
+}
+
+.see-me-container p:last-of-type {
+
+	margin-top: 20px;
+}
+
+/*Second Nav Bar with the Display Time */
+
+.nav-bar-container {
+
+	display: grid;
+	grid-template-columns: 30% 45% 25%;
+	background-color: #712881;
+}
+
+.ul-container {
+	grid-column-start: 2;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+    color: #fff;
+	display: inline-flex;
+    list-style-type: none;
+    font-size: 14px;
+    height: 50px;
+}
+
+
+.ul-container li {
+
+	padding: 16px;
+	text-align: center;
+	position: relative;
+}
+
+.ul-container li:hover {
+
+	background-color: #8C3E9E;
+	margin: 0;
+	cursor: pointer;
+}
+
+/*Here the ul of the weather container*/
+
+.ul-weather-container {
+	display: flex;
+	color: #fff;
+	 box-sizing: border-box;
+    background-color: #712881;
+    margin: 0;
+    list-style-type: none;
+    align-items: center;
+    padding: 0;
+	position: relative;
+	right: -60px;
+}
+
+/* Defining the dropdown next to the weather */
+.dropdown-2 {
+
+	align-self: center;
+	position: relative;
+	list-style-type: none;
+    display: inline-block;
+}
+
+.dropdown-2 i {
+  	position: relative;
+	color: #fff;
+	opacity: 0.5;
+	font-size: 1em;
+	cursor: pointer;
+}
+
+
+.dropdown-content-2 {
+
+	background-color: #712881;
+    color: #fff;
+    display: none;
+	position: absolute;
+	top: 34.9px;
+	left: -140px;
+	min-width: 165px;
+    text-decoration: none;
+    z-index: 1;
+  }
+
+.scores-stocks {
+	padding: 10px;
+    font-size: 22px;
+  }
+
+.scor-stoc-li {
+	padding: 10px;
+	font-size: 12px;
+  }
+
+ .scor-stoc-li-2 {
+	padding: 10px 10px 20px 10px;
+	font-size: 12px;
+  }
+
+.dropdown-2:hover .dropdown-content-2 {
+    display: block;
+}
+
+.dropdown-2:hover .dropbtn-2 {
+    background-color: #3e8e41;
+}
+
+.dropdown-content-2:hover {
+	background-color: #a3a3a3;
+}
+
+.dropdown-ul:hover .dropdown-content-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-ul:hover .dropicon {
+    background-color: #712881;
+}
+
+.city-li {
+	font-size: 12px;
+}
+
+.degrees {
+	font-size: 20px;
+	padding: 0 10px;
+}
+
+.inline-ul-container {
+	display: none;
+}
+
+/*Here the news section*/
+
+.news-container {
+
+	display: grid;
+    grid-template-columns: 25% 50% 20%;
+	background-color: #fff;
+	align-items: center;
+	height: 320px; 
+}
+
+.news-container-paragraph {
+	display: grid;
+}
+
+.news-container-paragraph a {
+	color: #7f3692;
+}
+
+.news-container-paragraph a:hover {
+	color: #04bfec;
+}
+
+.angle-container {
+	display: grid;
+	color: #7f3692;
+}
+
+.angle-container i {
+	padding: 50px 0;
+}
+.two-icons-ul {
+
+	list-style-type: none;
+	justify-self: center;
+	display: inline-flex;
+	position: relative;
+	margin-left: 50px;
+}
+
+
+.two-icons-ul li {
+
+	padding: 10px;
+}
+
+
+
+.two-icons-ul li a {
+				
+			    display: inline-grid;
+			    width: 100px;
+			    height: 100px;
+			    box-sizing: border-box;
+			    border-radius: 50%;
+			    border: 3px solid #9D4FAC;
+			    color: #9D4FAC;
+			    line-height: 100px;
+			    text-align: center;
+			    background: #fff;
+			    text-decoration: none;
+			    transition: all 100ms ease-in;
+
+}
+
+.two-icons-ul li a:hover {
+	
+	transition: all 100ms ease-in;
+    transform: scale(1.2);
+    color: #04bfec;
+}
+
+.two-icons-ul li a:active {
+
+	 transition: all 100ms ease-in;
+	 transform: scale(1.2);
+}
+
+/*Last section of website London*/
+
+.yahoo-tumblr {
+	background-image: url(files/london-eye-mod.png);
+    background-repeat: no-repeat;
+    height: 662px;
+    width: 100%;
+    margin: 0;
+    background-size: cover;
+    align-items: center;
+	display: grid;
+    grid-template-columns: 100%;
+    /*background: linear-gradient(to bottom, #fff 0, #FFFFD1 150px);*/
+
+}
+
+.yahoo-tumblr-news {
+	margin: 0 auto;
+	text-align: center;
+	color: #712881;
+}
+
+.yahoo-tumblr-news p {
+	padding: 0 450px 0 450px;
+    font-weight: 100;
+}
+
+.yahoo-h1 {
+	font-size: 2.6em;
+}
+
+
+.button {
+
+	background-color: #9D4FAC;
+    color: #fff;
+    padding: 14px 34px 14px 34px;
+    border: 0;
+    font-weight: 100;
+    position: relative;
+    outline: none;
+}
+
+.button:hover {
+	background-color: #8f3da4;
+}
+
+.button:active {
+	background-color: #7f3692;
+	color: #eef546;
+	transform: translateY(4px);
+}
